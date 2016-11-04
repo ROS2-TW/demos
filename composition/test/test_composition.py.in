@@ -28,9 +28,6 @@ def test_manual_composition():
 
 
 def test_linktime_composition():
-    if os.name == 'nt':
-        print('The link time registration of classes does not work on Windows')
-        return
     name = 'test_linktime_composition'
     executable = '@LINKTIME_COMPOSITION_EXECUTABLE@'
     launch(name, [executable])
